@@ -29,11 +29,11 @@
 <p>This is a collection of bookmarklets intended to make working with CLO a little bit easier. Just drag to your bookmarks bar or copy the link and paste it into a new bookmark.</p>
 
 <ul>
-  <li><a href="javascript:!function(){var e=document.body;if(e){var t=document.createElement('script');t.type='text/javascript';t.src='https://raw.githubusercontent.com/jblevins/bookmarklets/master/perusable/perusable.js';e.appendChild(t)}}()">Perusable</a> - reveals all reusables (other than those in attributes) on a page (requires s_debug=true)</li>
-  <li><a href="javascript:window.location=window.location.href.replace(/\/site\/.*$/, '/site/UserLogin?logout=logout');">Log Out</a> - Logs you out of a CLO site. (Useful for sites that don't have login/logout in the header)</li>
-  <li><a href="javascript:alert('jQuery version: '+ (window.jQuery ? jQuery().jquery : 'none')+'\n$ is '+(window.$ ? ($===window.jQuery ? '' :'not ')+'jQuery.' : 'not defined'));">Check jQuery version</a>
-  <li><a href='javascript:!function(){var e=document.body;if(e){var t=document.createElement("script");t.type="text/javascript";t.src="//code.jquery.com/jquery-1.11.0.min.js";e.appendChild(t)}}()'>Inject jQuery</a> - if it's not already there.</li>
-  <li><a href='javascript:window.location=window.location.href.replace(/\/admin\/.*$/, "/admin/AdminConsole");'>Switch to Admin Console</a> (if you have access)</li>
+  <li><a href="javascript:void(!function(){var e=document.body;if(e){var t=document.createElement('script');t.type='text/javascript';t.src='https://raw.githubusercontent.com/jblevins/bookmarklets/master/perusable/perusable.js';e.appendChild(t)}}())">Perusable</a> - reveals all reusables (other than those in attributes) on a page (requires s_debug=true)</li>
+  <li><a href="javascript:void(window.location=window.location.href.replace(/\/site\/.*$/, '/site/UserLogin?logout=logout'))">Log Out</a> - Logs you out of a CLO site. (Useful for sites that don't have login/logout in the header)</li>
+  <li><a href="javascript:void(alert('jQuery version: '+ (window.jQuery ? jQuery().jquery : 'none')+'\n$ is '+(window.$ ? ($===window.jQuery ? '' :'not ')+'jQuery.' : 'not defined')))">Check jQuery version</a>
+  <li><a href='javascript:void(!function(){var e=document.body;if(e){var t=document.createElement("script");t.type="text/javascript";t.src="//code.jquery.com/jquery-1.11.0.min.js";e.appendChild(t)}}())'>Inject jQuery</a> - if it's not already there.</li>
+  <li><a href='javascript:void(window.location=window.location.href.replace(/\/admin\/.*$/, "/admin/AdminConsole"))'>Switch to Admin Console</a> (if you have access)</li>
 
 </ul>
     <script src="javascripts/scale.fix.js"></script>
